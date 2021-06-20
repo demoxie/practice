@@ -20,7 +20,7 @@ public class Main {
         sb = new StringBuilder(str);
         //return String.valueOf(sb.reverse());
         rev = String.valueOf(sb.reverse());
-
+//This is where the conditional test takes place
         if(rev.equals(str)){
             res += x+" is a palindrome number";
         }else{
