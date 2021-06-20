@@ -1,13 +1,18 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-        System.out.println(CheckPallindromeNumber(141));
+	// Function is called here
+        Scanner input = new Scanner(System.in);
+        Integer strInput = input.nextInt();
+        System.out.println(CheckPalindromeNumber(strInput));
 
     }
-    public static String CheckPallindromeNumber(int x){
+    //This function checks if a number is a palindrome number
+    public static String CheckPalindromeNumber(int x){
         String str = Integer.toString(x);
         String res = "";
         StringBuilder sb;
